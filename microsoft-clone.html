@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <style>
+        .navbar {
+            /* border: 3px solid red; */
+            display: flex;
+
+        }
+
+        .one {
+            /* border: 2px solid black; */
+            display: flex;
+            list-style: none;
+            width: 600px;
+        }
+
+        .one img {
+            height: 20px;
+
+        }
+
+        .one li {
+            margin-right: 20px;
+        }
+
+        .two {
+            /* border: 2px solid green; */
+            display: flex;
+            list-style: none;
+            width: 250px;
+            position: absolute;
+            right: 10px;
+        }
+
+        .two img {
+            height: 20px;
+
+        }
+
+        .two li {
+            margin-right: 20px;
+        }
+
+        /* responsive for navbar */
+
+        @media screen and (min-width:450px) and (max-width:550px) {
+            .navbar {
+                /* border: 3px solid red; */
+                display: flex;
+
+            }
+
+            .one {
+                /* border: 2px solid black; */
+                display: flex;
+                list-style: none;
+                width: 600px;
+            }
+
+            .one img {
+                height: 20px;
+
+            }
+
+            .one li {
+                margin-right: 20px;
+            }
+
+            .two {
+                /* border: 2px solid green; */
+                display: flex;
+                list-style: none;
+                width: 250px;
+                position: absolute;
+                right: 10px;
+            }
+
+            .two img {
+                height: 20px;
+
+            }
+
+            .two li {
+                margin-right: 20px;
+            }
+        }
+
+        /* responsive for navbar ends */
+
+        /* banner */
+        .banner {
+            /* border: 2px solid purple; */
+            height: 500px;
+            width: 100%;
+            background-image: url("./microsoft.img");
+            background-color: rgb(242 242 242);
+            background-position: right;
+            background-size: 70% 100%;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .text {
+            /* border: 2px solid red; */
+            width: 300px;
+            position: absolute;
+            top: 250px;
+            left: 100px;
+        }
+
+        .text button {
+            padding: 10px 10px;
+            background-color: rgba(73, 73, 243, 0.9);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            row-gap: 50px;
+            column-gap: 50px;
+            margin-right: 20px;
+            /* border: 2px solid red; */
+            position: absolute;
+            /* top: 40px; */
+            left: 200px;
+            margin-top: 50px;
+            width: 700px;
+            margin-bottom: 40px;
+        }
+
+        .s {
+            width: 200px;
+            text-align: center;
+        }
+
+        .grid2 {
+            width: 400px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            row-gap: 10px;
+            column-gap: 10px;
+            position: relative;
+            top: 200px;
+            left: 140px;
+            margin-top: 20px;
+
+        }
+
+        .o img {
+            width: 250px;
+        }
+
+
+        .edge {
+            background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-hero-Edge:VP2-859x540");
+            width: 200px;
+            /* position: relative; */
+            /* top: 700px; */
+            border: 2px solid blue;
+            /* height: 700px; */
+            width: 100%;
+            height: 700px;
+            background-position: center;
+            background-size: 100% 100%;
+            position: relative;
+            top: 300px;
+        }
+
+        .m {
+            border: 2px solid black;
+            height: 200px;
+            width: 450px;
+            position: relative;
+            top: 350px;
+            left: 100px;
+            background-color: aliceblue;
+            padding: 10px;
+        }
+
+        /* .business {
+            position: relative;
+            top: 100px;
+            left: 30px;
+
+        } */
+
+        .grid3 {
+
+            width: 400px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            row-gap: 10px;
+            column-gap: 10px;
+            position: relative;
+            left: 200px;
+            bottom: 300px;
+            margin-top: 20px;
+        }
+
+        .y {
+            height: 300px;
+            width: 240px;
+            text-align: center;
+            position: relative;
+            right: 120px;
+            top: 700px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .y img {
+            width: 250px;
+        }
+
+        /* footer */
+
+        footer {
+            position: relative;
+            top: 500px;
+            /* border: 2px solid black; */
+
+
+        }
+
+        table {
+            display: flex;
+            justify-content: space-evenly;
+            /* border: 2px solid red; */
+            background-color: #f2f2f2;
+        }
+
+        tr {
+            /* border: 2px solid red;  */
+        }
+
+        th {
+            /* border: 2px solid red; */
+            padding: 20px 50px;
+        }
+
+        td {
+            /* border: 2px solid rgb(81, 6, 221); */
+            text-align: center;
+            padding: 15px 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--navbar content-->
+    <div class="navbar">
+        <ul class="one">
+            <li><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+                    alt=""></li>
+            <li>Microsoft 365</li>
+            <li>Team</li>
+            <li>Window</li>
+            <li>Surface</li>
+            <li>Xbox</li>
+            <li>Support</li>
+
+        </ul>
+
+        <ul class="two">
+            <li>All Microsoft</li>
+            <li><img src="https://cdn-icons-png.flaticon.com/128/149/149852.png" alt=""></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/128/3144/3144456.png" alt=""></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/128/1250/1250739.png" alt=""></li>
+
+        </ul>
+
+
+
+    </div>
+
+    <!--buttom microsoft and pic -->
+
+    <div class="banner">
+
+        <div class="text">
+            <h2>
+                Microsoft 365
+            </h2>
+            <p>
+                Premim office apps,extra cloud storage, advanced security,and more-all in one convenient subscription
+            </p>
+
+            <button> for up to 6 people</button>
+
+        </div>
+
+    </div>
+
+    <!--grid start-->
+
+    <div class="grid">
+        <div class="s">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Quick-Link-Icon-80x80-Microsoft-365?wid=40&hei=40"
+                alt="">
+            <h3>
+                Choose your Microsft 365
+            </h3>
+        </div>
+        <div class="s">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-LL-surface-kickstand-120x120?wid=40&hei=40"
+                alt="">
+            <h3>
+                Explore Surface device
+            </h3>
+        </div>
+        <div class="s">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-ICON-LL-xbox-logo-120x120?wid=40&hei=40"
+                alt="">
+            <h3>
+                Buy Xbox games
+            </h3>
+        </div>
+        <div class="s">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Quick-Link-Icon-80x80-Microsoft-365?wid=40&hei=40"
+                alt="">
+            <h3>
+                Get Window 11
+            </h3>
+        </div>
+
+
+    </div>
+    <!-- grid2 content -->
+    <div class="grid2">
+        <div class="o">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Laptop-Go-2-01-M01?wid=297&hei=167&fit=crop"
+                alt="">
+            <h2>
+                Surface Laptop Go
+            </h2>
+            <p>
+                A sleek laptop with a 12.4-inch touchscreen, great typing experience and improved HD camera.
+            </p>
+
+
+        </div>
+
+        <div class="o">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Gldn-mscom-01-Black-Platinum-CP01?wid=406&hei=230&fit=crop"
+                alt="">
+            <h2>
+                Surface Laptop 4
+            </h2>
+            <p>
+                Do it all with a perfect balance of sleek, ultra-thin design, multitasking speed and improved
+                performance.
+            </p>
+
+
+        </div>
+
+        <div class="o">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-AEM-PC-Game-Pass-Expansion?wid=406&hei=230&fit=crop"
+                alt="">
+            <h2>
+                PC Game Pass
+            </h2>
+            <p>
+                Unlock 100+ great games and EA Play, plus get your first month for ₹50. Offer available to new
+                subscribers only.
+            </p>
+
+
+        </div>
+
+
+
+        <div class="o">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=406&hei=230&fit=crop"
+                alt="">
+            <h2>
+                Designed for life today – and tomorrow
+            </h2>
+            <p>
+                The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you
+                closer to everything you love.
+            </p>
+
+        </div>
+    </div>
+
+    <!-- edge picture part -->
+
+    <div class="edge">
+        <div class="m">
+            <h1> Microsoft edge</h1>
+            <p> World-class performance with more privacy, more value while you browse</p>
+            <button class="btn2">Download now</button>
+
+        </div>
+    </div>
+    <!-- for business heading and grid start -->
+    <h2 class="business"></h2>
+    <div class="grid3">
+        <div class="y">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Laptop-Go-2-03-M01?wid=297&hei=167&fit=crop"
+                alt="">
+            <h2>Surface Laptop Go 2 for Business</h2>
+            <p>A sleek, portable laptop featuring a great typing experience, Windows 11 Pro and professional-grade
+                performance.</p>
+        </div>
+
+        <div class="y">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Microsoft-Teams-Commercial?wid=297&hei=167&fit=crop"
+                alt="">
+            <h2>Get Microsoft Teams for free</h2>
+            <p>Online meetings, chat and shared cloud storage – all in one place.</p>
+        </div>
+
+        <div class="y">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-M365-CP-Microsoft365-Commercial?wid=297&hei=167&fit=crop"
+                alt="">
+            <h2>Microsoft 365 for business </h2>
+            <p>Stay a step ahead with powerful apps for productivity, connection and security.</p>
+        </div>
+
+        <div class="y">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Windows-11-Business?wid=297&hei=167&fit=crop"
+                alt="">
+            <h2>Window 11 for business is here</h2>
+            <p>Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all.
+
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer start here -->
+
+    <footer>
+
+        <table>
+            <tr>
+                <th>What's new</th>
+                <th>Microsoft Store</th>
+                <th>Education</th>
+                <th>Business</th>
+                <th>Developer & IT</th>
+                <th>Company</th>
+
+            </tr>
+            <tr>
+                <td>Microsoft 365</td>
+                <td>Account profile</td>
+                <td>Microsoft in education</td>
+                <td>Microsoft cloud </td>
+                <td>Developer centre</td>
+                <td>Careers</td>
+            </tr>
+            <tr>
+                <td>Surface pro X</td>
+                <td>Download center</td>
+                <td>Devices for education</td>
+                <td>Microsoft Security</td>
+                <td>Documentation</td>
+                <td>About Microsoft</td>
+            </tr>
+            <tr>
+                <td>Surface Pro 7</td>
+                <td>Microsoft Store Support</td>
+                <td>Microsoft Teams for Education</td>
+                <td>Azure</td>
+                <td>Microsoft Learn</td>
+                <td>Company news</td>
+            </tr>
+            <tr>
+                <td>Surface Laptop 3</td>
+                <td>Returns</td>
+                <td>Microsoft 365 Education</td>
+                <td>Dynamic 365</td>
+                <td>Microsoft Tech Community</td>
+                <td>Privacy at Microsoft</td>
+            </tr>
+            <tr>
+                <td>Window 11 Apps</td>
+                <td>Order Tracking</td>
+                <td>Office Education</td>
+                <td>Microsoft 365</td>
+                <td>Azure Marketplace</td>
+                <td>Investors</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Educator training and development</td>
+                <td>Microsoft Advertising</td>
+                <td>AppSource</td>
+                <td>Security</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Deals for students and parents</td>
+                <td>Microsoft Industry</td>
+                <td>Microsoft Power Platform</td>
+                <td>Sustainability</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Azure for students</td>
+                <td>Microsoft Teams</td>
+                <td>Visual Studio</td>
+                <td></td>
+            </tr>
+
+        </table>
+
+    </footer>
+
+</body>
+
+</html>

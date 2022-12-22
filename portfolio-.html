@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <style>
+        .navbar {
+            /* border: 2px solid red; */
+            display: flex;
+            background-image: linear-gradient(40deg, rgb(154, 154, 242), grey);
+            margin-bottom: 40px;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            /* border: 2px solid blue; */
+            justify-content: space-evenly;
+            width: 1000px;
+
+        }
+
+        .navbar ul li {
+            padding: 15px;
+            font-size: 30px;
+            /* border: 2px solid black; */
+            font-family: cursive;
+        }
+
+
+        .navbar ul img {
+            height: 70px;
+            width: 70px;
+
+        }
+
+        .navbar button {
+            position: absolute;
+            right: 100px;
+            top: 40px;
+            padding: 10px 40px;
+            border-radius: 25px;
+            /* height: 40px; */
+            font-size: 20px;
+            border: 2px solid yellow;
+            color: blue;
+        }
+
+        .navbar button:hover {
+            border: 2px solid rgb(10, 14, 227);
+            background-color: rgb(232, 238, 35);
+            box-shadow: 0 0 20px 20px greenyellow;
+        }
+
+        /* second part  */
+        .banner {
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            background-image: linear-gradient(30deg, rgb(47, 68, 68), grey, black);
+
+        }
+
+        .text {
+            /* border: 2px solid blue; */
+            width: 400px;
+            height: 400px;
+            position: relative;
+            top: 60px;
+
+        }
+
+        .banner img {
+            height: 500px;
+            width: 750px;
+        }
+
+        .text h1 {
+            font-size: 50px;
+            color: darkorange;
+        }
+
+
+        .text p {
+            font-size: 20px;
+            font-family: cursive;
+            color: rgb(17, 26, 19);
+            text-align: center;
+        }
+
+        .text button {
+            /* border: 2px solid aqua; */
+            color: aqua;
+            font-size: 30px;
+            padding: 8px 15px;
+            position: relative;
+            left: 110px;
+            border-radius: 15px;
+            background-color: grey;
+        }
+
+        .text button:hover {
+            /* border: 2px solid black; */
+            color: black;
+            box-shadow: 0px 0px 20px 20px aqua;
+        }
+
+        .third {
+            /* border: 2px solid black; */
+            /* height: 500px; */
+            /* width: 100%px; */
+            display: flex;
+            justify-content: space-around;
+            margin-top: 35px;
+            margin-bottom: 50px;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            height: 300px;
+            width: 550px;
+        }
+
+        .left p {
+            font-size: 20px;
+            font-family: cursive;
+            line-height: 50px;
+        }
+
+        .left button {
+            padding: 10px 45px;
+            border-radius: 40px;
+            font-size: 25px;
+            color: white;
+            background-color: black;
+        }
+
+        .left button:hover {
+            box-shadow: 0 0 15px 15px aqua;
+            color: red;
+        }
+
+        .right {
+            /* border: 2px solid red; */
+            width: 500px;
+            height: 450px;
+        }
+
+        .one {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 10px solid blue;
+            position: absolute;
+            right: 150px;
+            top: 750px;
+        }
+
+        .two {
+            position: absolute;
+            left: 700px;
+            top: 980px;
+        }
+
+
+        .three {
+            position: absolute;
+            right: 70px;
+            top: 960px;
+        }
+
+        .services {
+
+            margin-top: 40px;
+            /* border: 2px solid red; */
+            height: 290px;
+            text-align: right;
+            background-image: url("https://images.unsplash.com/photo-1507608158173-1dcec673a2e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJsdWUlMjBkb3R0ZWQlMjB0ZXh0dXJlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .services-in {
+            /* display: flex; */
+        }
+
+        .services-in img {
+            width: 400px;
+            height: 5px;
+            position: relative;
+            right: 150px;
+            top: 45px;
+        }
+
+        .one2 {
+            /* border: 2px solid blue; */
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            top: 120px;
+        }
+
+        .one-in {
+            /* border: 3px solid rgba(12, 240, 42, 0.271); */
+            height: 300px;
+            width: 180px;
+            text-align: center;
+        }
+
+        .one-in img {
+            height: 200px;
+            width: 180px;
+        }
+
+        .one-in button {
+            position: absolute;
+            right: 600px;
+            top: 280px;
+            padding: 15px 40px;
+            background-color: black;
+            color: white;
+            border-radius: 40px;
+        }
+
+        .one-in button:hover {
+            box-shadow: 0 0 15px 15px purple;
+            color: plum;
+        }
+
+        .portfolio {
+            /* border: 2px solid red; */
+            height: 500px;
+            width: 97vw;
+            position: absolute;
+            top: 1800px;
+        }
+
+        .portfolio h2 {
+            position: relative;
+            left: 50px;
+            font-size: 40px;
+        }
+
+        .portfolio p {
+            position: relative;
+            left: 50px;
+            font-size: 20px;
+
+        }
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            column-gap: 20px;
+            row-gap: 20px;
+            position: relative;
+            left: 30px;
+
+
+        }
+
+        .grid2 img {
+            height: 150px;
+            width: 350px;
+        }
+
+        .news {
+            /* border: 2px solid blue; */
+            height: 500px;
+            width: 97vw;
+            position: relative;
+            top: 870px;
+
+        }
+
+        .heading {
+            text-align: right;
+        }
+
+        .heading h2 {
+            font-size: 40px;
+        }
+
+        .heading p {
+            font-size: 20px;
+        }
+
+        .grid3 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* border: 2px solid black; */
+        }
+
+        .grid3 img {
+            height: 200px;
+            position: relative;
+            left: 15px;
+
+        }
+
+        .news-grid {
+            /* border: 2px solid purple; */
+            text-align: center;
+        }
+
+        .contact {
+            /* border: 2px solid black; */
+            position: relative;
+            top: 900px;
+        }
+
+        .contact h1 {
+            position: relative;
+            left: 1090px;
+        }
+
+        .inputxt {
+            /* border: 2px solid red; */
+            height: 400px;
+
+
+        }
+
+        #fname {
+            margin-top: 20px;
+            margin-left: 50px;
+            height: 40px;
+            width: 800px;
+            font-size: 20px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: rgb(213, 192, 192);
+        }
+
+        #email {
+            margin-top: 20px;
+            margin-left: 50px;
+            height: 40px;
+            width: 800px;
+            font-size: 20px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: rgb(213, 192, 192);
+        }
+
+        #pnumber {
+            margin-top: 20px;
+            margin-left: 50px;
+            height: 40px;
+            width: 800px;
+            font-size: 20px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: rgb(213, 192, 192);
+        }
+
+        #message {
+            margin-top: 20px;
+            margin-left: 50px;
+            position: relative;
+            left: 3px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: rgb(213, 192, 192);
+            font-size: 20px;
+
+
+        }
+
+        .inputxt button {
+            padding: 10px 25px;
+            position: relative;
+            left: 400px;
+            background-color: rgb(14, 14, 238);
+            color: white;
+            border-radius: 25px;
+
+        }
+
+        .inputxt button:hover {
+            box-shadow: 0px 0px 30px 15px red;
+            color: beige;
+        }
+
+        .foot-container {
+            /* border: 2px solid red; */
+            background-color: rgb(52, 52, 199);
+            position: relative;
+            top: 1000px;
+        }
+
+        .img-content {
+
+            display: flex;
+            justify-content: space-between;
+            /* border: 3px solid red; */
+            width: 300px;
+            position: relative;
+            left: 500px;
+        }
+
+        .img-content img {
+            height: 50px;
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        .foot-container p {
+            color: white;
+            text-align: center;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+
+        <ul>
+            <img src="https://th.bing.com/th/id/OIP.zJ0deD4qUqiZJl2eCOgPdwHaHn?w=151&h=188&c=7&r=0&o=5&pid=1.7" alt="">
+            <li>Home</li>
+            <li>About</li>
+            <li>skill</li>
+            <li>Project</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+        <button>
+            Download CV
+        </button>
+    </div>
+    <!-- second part of demo -->
+    <div class="banner">
+        <img src="https://media.istockphoto.com/photos/the-guitarist-plays-on-guitar-in-a-dark-room-hands-of-a-guitar-player-picture-id1385170622?b=1&k=20&m=1385170622&s=170667a&w=0&h=K1bA-BitK0s0w24lPgX87F71F8PElXS9wfsZVKyprc4="
+            alt="">
+        <div class="text">
+            <h1>
+                DISCOVERING
+                SOMETHING
+                NEW BRAND
+            </h1>
+            <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem
+            </p>
+            <button>Contact us</button>
+        </div>
+    </div>
+    <!-- third part -->
+    <div class="third">
+        <div class="left">
+            <h1>
+                ABOUT
+                WEB ELEMENTS
+            </h1>
+            <img class="four" src="./line img.PNG" alt="">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem</p>
+            <button>Read Us</button>
+        </div>
+        <div class="right">
+            <img class="one"
+                src="https://media.istockphoto.com/photos/search-bar-concept-picture-id1324696780?b=1&k=20&m=1324696780&s=170667a&w=0&h=-YZKL3SKgPii1g2STpgdewXo7KeQtJVEysRq_8j-ku4="
+                alt="">
+            <img class="two" src="./img 2.PNG" alt="">
+            <img class="three" src="./Circle img.PNG" alt="">
+
+
+        </div>
+
+    </div>
+    <div class="services">
+        <div class="services-in">
+            <img src="https://images.unsplash.com/photo-1496715976403-7e36dc43f17b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJsdWUlMjBkb3R0ZWQlMjB0ZXh0dXJlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            <h2>SERVICES</h2>
+        </div>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+        <div class="one2">
+            <div class="one-in">
+                <img src="https://media.istockphoto.com/photos/network-of-transportation-concept-picture-id1168736824?k=20&m=1168736824&s=612x612&w=0&h=lVGkGciFxhjghF5zs8xUj7W2M5XfJZJw13aj_2gqpfc="
+                    alt="">
+                <h3>WEB</h3>
+            </div>
+
+            <div class="one-in">
+                <img src="https://media.istockphoto.com/photos/illustration-of-business-stock-chart-with-arrow-on-target-3d-picture-id1340675101?k=20&m=1340675101&s=612x612&w=0&h=gx40WAAYY_hf6Jml5iOSCcrs3vWKlNa1jb9AFrWQSfc="
+                    alt="">
+                <h3>GRAPH DESIGN</h3>
+            </div>
+
+            <div class="one-in">
+                <img src="https://media.istockphoto.com/photos/pencil-picture-id175524552?k=20&m=175524552&s=612x612&w=0&h=u_-jufxQY65mLpald1MOEPkcTy9sixTtWheoUMxxKrY="
+                    alt="">
+                <h3>DRAW</h3>
+            </div>
+
+            <div class="one-in">
+                <img src="https://media.istockphoto.com/photos/cloud-computing-the-data-transfer-and-storage-concept-consists-of-a-picture-id1345778718?b=1&k=20&m=1345778718&s=170667a&w=0&h=xPbdZ5MUeM_qOi12Yl99n-cYmEF4DIGIn3M86cCcuQw="
+                    alt="">
+                <h3>CLOUD</h3>
+            </div>
+
+            <div class="one-in">
+                <img src="https://media.istockphoto.com/id/1306526412/photo/men-working-in-laptop-at-office.webp?s=612x612&w=is&k=20&c=pAdljGp-vGSmbzXZfF8_dPsp-uvDV2cRo_ewAgn4Iy4="
+                    alt="">
+                <h3>HELP</h3>
+                <button>Read Us</button>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="portfolio">
+        <h2>PORTFOLIO</h2>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority
+
+            website template imagewebsite template image
+        </p>
+        <div class="grid2">
+
+            <img src="https://media.istockphoto.com/photos/smart-female-it-programer-working-on-desktop-computer-in-data-center-picture-id1194430863?k=20&m=1194430863&s=612x612&w=0&h=jXs5pGuhn-Fy463zdQa0Ap6YRtJTr3-Yki_bMEs9pfs="
+                alt="">
+
+
+            <img src="https://media.istockphoto.com/photos/search-engine-optimization-picture-id891298018?k=20&m=891298018&s=612x612&w=0&h=BhbMkve3CyrjAbDr_2AhtDqskh1WQHJivGa6nZfSylA="
+                alt="">
+
+
+            <img src="https://media.istockphoto.com/photos/web-search-with-laptop-picture-id1011884612?k=20&m=1011884612&s=612x612&w=0&h=nsRSDAURPUbbe9RUun-LaOVjYEpBBteOt12RDam4bHM="
+                alt="">
+
+
+            <img src="https://media.istockphoto.com/photos/digital-online-marketing-commerce-sale-concept-woman-using-tablet-picture-id1025744816?k=20&m=1025744816&s=612x612&w=0&h=1H013am3TZ9e5qZGw8qrFHubrBKxv8yKl2OX_zXDmoM="
+                alt="">
+
+
+            <img src="https://media.istockphoto.com/photos/social-networking-service-concept-streaming-video-video-library-picture-id1194783078?k=20&m=1194783078&s=612x612&w=0&h=uRAiG8wuV31xVMs1R10T3JiPAgve9DxCEzY8KUj14hY="
+                alt="">
+
+            <img src="https://media.istockphoto.com/photos/digital-marketing-hexagonal-touch-screen-concept-picture-id1333702051?k=20&m=1333702051&s=612x612&w=0&h=vMoBBchlTd75AUNWaYPaDUUBCaKqowsgwbBUe5CTRbI="
+                alt="">
+
+
+        </div>
+    </div>
+    <div class="news">
+        <div class="heading">
+            <h2>LETEST NEWS</h2>
+            <P>There are many variations of passages of Lorem Ipsum available, but the majority</P>
+        </div>
+        <div class="grid3">
+            <div class="news-grid">
+                <img src="https://media.istockphoto.com/photos/abstract-3d-render-primitives-geometric-shapes-isometric-background-picture-id1201585879?k=20&m=1201585879&s=612x612&w=0&h=P3FDrK1wMuaNwgtFRy7p1TIdFrD3jcB37tNuFBKIU3s="
+                    alt="">
+                <h2>ELEMENT GOOD DESIGN</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem</p>
+            </div>
+            <div class="news-grid">
+                <img src="https://media.istockphoto.com/photos/social-network-picture-id1219854233?k=20&m=1219854233&s=612x612&w=0&h=mJP0KV9z1NZvpN3SRkRbRJS_OlEna92xoh_MxFd_DaU="
+                    alt="">
+                <h2>ELEMENT GOOD DESIGN</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem</p>
+            </div>
+            <div class="news-grid">
+                <img src="https://media.istockphoto.com/photos/blurred-image-of-polygon-and-abstract-people-background-for-concept-picture-id698790916?k=20&m=698790916&s=612x612&w=0&h=9F6rpKCa-n0rLbo1xY7hLZ73mias7tAA_Rf_R3AHlwM="
+                    alt="">
+                <h2>ELEMENT GOOD DESIGN</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact">
+        <h1>
+            CONTACT US
+        </h1>
+
+        <div class="inputxt">
+            <input type="text" name="" placeholder="NAME" id="fname"><br><br>
+            <input type="text" name="" placeholder="Email" id="email"><br><br>
+            <input type="text" name="" placeholder="Phone Number" id="pnumber"><br><br>
+            <textarea name="" placeholder="Message" id="message" cols="71" rows="5"></textarea><br><br>
+            <button> SEND</button>
+        </div>
+
+    </div>
+    <div class="foot-container">
+        <div class="img-content">
+            <img src="https://images.unsplash.com/photo-1627843563095-f6e94676cfe0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjZWJvb2slMjBsb2dvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZmFjZWJvb2slMjBsb2dvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmFjZWJvb2slMjBsb2dvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlua2VkaW4lMjBsb2dvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatum ratione consectetur facilis quasi
+            nulla animi quas qui dolores accusamus? Commodi dicta officiis, accusantium praesentium voluptatem mollitia
+            odit eos? At quidem tempore eos obcaecati dolor facere vel laudantium modi delectus accusantium cupiditate
+            ipsum vitae, dolorem voluptatibus temporibus quod. Dicta assumenda commodi vel, numquam doloribus
+            aspernatur. Doloremque at molestiae illum facere tempore veniam asperiores repudiandae, modi pariatur
+            veritatis? Animi iusto accusantium eveniet fuga, eos atque odit, dicta nihil, recusandae qui vitae?
+        </p>
+    </div>
+</body>
+
+</html>
